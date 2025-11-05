@@ -1,0 +1,19 @@
+body {
+    background-color: #050516c2;
+    color: rgb(240, 217, 217);
+    line-height: 2;
+}
+
+#titulo {
+    margin-left: 5%;
+    font-size: 100px;
+    color: gold;
+}
+
+p {
+    font-size: 30px;
+}
+
+li {
+    font-size: 25px;
+}
