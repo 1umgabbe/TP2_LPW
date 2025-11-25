@@ -117,7 +117,7 @@ ul li {
 }
 
 /* Botão modo escuro */
-.dark-mode-toggle {
+.login-page {
   position: fixed;
   top: 15px;
   right: 15px;
@@ -133,8 +133,14 @@ ul li {
   z-index: 1000;
 }
 
-.dark-mode-toggle:hover {
+.login-page:hover {
   background-color: #084cdf;
+}
+
+.login-page a {
+  color: white;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes fadeInDown {
