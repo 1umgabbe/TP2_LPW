@@ -20,6 +20,7 @@ body.dark-mode {
     --input-bg: #2c2c2c;
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--light-blue);
@@ -33,6 +34,14 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* wrapper used to contain both forms and allow smooth transitions */
+.auth-wrapper {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+
+}
+
 .login-container {
     background-color: var(--card-background);
     padding: 40px;
@@ -40,9 +49,31 @@ body {
     box-shadow: 0 8px 16px var(--shadow-light);
     width: 100%;
     max-width: 400px;
+    box-shadow: 0 8px 20px rgba(255 255 255 / 0.05);
     text-align: center;
     box-sizing: border-box;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.login-container.ativo {
+    opacity: 1;
+    transform: none;
+    max-height: 1200px;
+    visibility: visible;
+}
+#register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo {
@@ -81,7 +112,8 @@ body {
 }
 
 .form-group input[type="text"],
-.form-group input[type="password"] {
+.form-group input[type="password"],
+.form-group input[type="email"] {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--border-color);
@@ -94,13 +126,15 @@ body {
 }
 
 .form-group input[type="text"]:hover,
-.form-group input[type="password"]:hover {
+.form-group input[type="password"]:hover,
+.form-group input[type="email"]:hover {
     outline: none;
     border-color: var(--primary-blue);
 }
 
 .form-group input[type="text"]:focus,
-.form-group input[type="password"]:focus {
+.form-group input[type="password"]:focus,
+form-group input[type="email"]:focus {
     outline: none;
     border-color: var(--primary-blue);
     -webkit-animation: pulse 2s infinite;
