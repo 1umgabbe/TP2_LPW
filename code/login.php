@@ -19,7 +19,7 @@
     <div id="login-form" class="login-container ativo" aria-hidden="false">
         <div class="logo"><a href="introduction.html">NextChip</a></div>
         <h2>Entrar</h2>
-        <form>
+        <form action="login_register.php" method="post">
             <div class="form-group">
                 <label for="login-email" class="text">Email</label>
                 <input type="email" id="login-email" name="email" placeholder="Digite seu email" required>
