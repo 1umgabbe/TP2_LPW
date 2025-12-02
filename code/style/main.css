@@ -267,3 +267,19 @@ select {
   color: var(--text-color);
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
+
+.voltar {
+  margin: 10px 6px 0px 6px;
+  padding: 6px 8px;
+  font-size: 0.9em;
+  border: 1px solid var(--primary-blue);
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.voltar a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
